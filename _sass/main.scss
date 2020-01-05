@@ -5,9 +5,9 @@
 
 /* Base */
 body { 
-    background-image: repeating-linear-gradient(to top right, #000000 20px, #2b2b2b 21px, #000000 20px); 
+    background-image: repeating-linear-gradient(to top right, #000000 20px, #2b2b2b 25px, #252525 20px); 
     animation-name: changeBackground;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
@@ -24,10 +24,13 @@ section {
 }
 .logo {
     color: rgb(63, 63, 63);
+    background: repeating-linear-gradient(white, white 2px, rgb(0, 0, 0) 2px, rgb(0, 0, 0) 3px);
     animation-name: changeShadowLogo;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Стили для больших экранов (дисплей максимум 1199 пикселей) */
@@ -54,57 +57,70 @@ section {
 @keyframes changeShadowLogo {
     from {
         color: rgb(165, 165, 165);
-        text-shadow: 1rem 0 1rem rgb(94, 94, 94),
-        -1rem 0 1rem rgb(43, 43, 43);
+        text-shadow: 1rem 0 3rem rgb(94, 94, 94),
+        -1rem 0 3rem rgb(43, 43, 43);
         animation-timing-function: ease-in;
+        background: repeating-linear-gradient(to top left, white, white 2px, rgb(0, 0, 0) 2px, rgb(0, 0, 0) 3px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: 0 0;
     }
     1%{
         transform: translate(300px, 10px);
     }
     4% {
         transform: scale(1.1,1.1);
-        text-shadow: 6rem 0 2rem rgb(94, 94, 94),
-        -7rem 0 2rem rgb(43, 43, 43);
+        text-shadow: 6rem 0 3rem rgb(94, 94, 94),
+        -7rem 0 3rem rgb(43, 43, 43);
     }
     5%{
         transform: scale(0.1,0.1);
-        text-shadow: 0.5rem -0.1rem 2rem rgb(94, 94, 94),
-        -0.5rem 0.1rem 2rem rgb(43, 43, 43);
+        text-shadow: 0.5rem -0.1rem 3rem rgb(94, 94, 94),
+        -0.5rem 0.1rem 3rem rgb(43, 43, 43);
         animation-timing-function: ease-out;
     }
     7%{
         transform: scale(1,1);
     }
     33% {
-        text-shadow: 0 -1rem 2rem rgb(94, 94, 94),
-        0 1rem 2rem rgb(43, 43, 43);
+        text-shadow: 0 -3rem 3rem rgb(94, 94, 94),
+        0 3rem 3rem rgb(43, 43, 43);
         animation-timing-function: ease-out;
     }
     60% {
         color: rgb(24, 24, 24);
-        text-shadow: 0 1rem 1rem rgb(94, 94, 94),
-        0 -1rem 2rem rgb(43, 43, 43);
+        text-shadow: 0 3rem 3rem rgb(94, 94, 94),
+        0 -3rem 3rem rgb(43, 43, 43);
         animation-timing-function: ease-in-out;
     }
     62%{
-        text-shadow: 0 4rem 1rem rgb(94, 94, 94),
-        0 -4rem 2rem rgb(43, 43, 43);
+        text-shadow: 0 4rem 3rem rgb(94, 94, 94),
+        0 -4rem 3rem rgb(43, 43, 43);
     }
     64%{
-        text-shadow: 0 1rem 1rem rgb(94, 94, 94),
-        0 -1rem 2rem rgb(43, 43, 43);
+        text-shadow: 0 3rem 3rem rgb(94, 94, 94),
+        0 -3rem 3rem rgb(43, 43, 43);
     }
     to {
-        text-shadow: -1rem 0 1rem rgb(94, 94, 94),
-        1rem 0 1em rgb(43, 43, 43)
+        text-shadow: -3rem 0 5rem rgb(32, 32, 32),
+        3rem 0 5rem rgb(43, 43, 43);
+        background: repeating-linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0) 2px, rgb(255, 255, 255) 2px, rgb(255, 255, 255) 3px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: 100px -100px;
     }
 }
 
 @keyframes changeBackground {
     0%{
-        background-position: 0 0
+        background-position: 0 0;
+        background-image: repeating-linear-gradient(to bottom right, #000000 20px, #2b2b2b 27px, #252525 20px); 
+    }
+    50%{
+        background-image: repeating-linear-gradient(to bottom left, #000000 20px, #383838 28px, #252525 20px); 
     }
     100%{
-        background-position: -600px 600px;
+        background-position: 1000px -1000px;
+        background-image: repeating-linear-gradient(to bottom right, #000000 20px, #2b2b2b 26px, #252525 20px); 
     }
 }
