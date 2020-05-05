@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Главная"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://novoserg-roo.github.io/
   - title: "О нас"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: https://novoserg-roo.github.io/
   - title: "Публикации"
     url: /year-archive/
   - title: "Поиск"
@@ -11,35 +11,37 @@ main:
   - title: "Карта сайта"
     url: /sitemap/
 docs:
-  - title: Customization
+  - title: Меню
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
+      - title: 'Национальный проект "Образованиe"'
         url: /docs/navigation/
-      - title: "UI Text"
+      - title: "Государственные и муниципальные программы"
         url: /docs/ui-text/
-      - title: "Authors"
+      - title: "Отдел опеки и попечительства"
         url: /docs/authors/
-      - title: "Layouts"
+      - title: "Дошкольное образование"
         url: /docs/layouts/
-
-  - title: Content
+friends: 
+  - title: Друзья сайта
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
+      - title: 'Министерство просвещения РФ'
+        url: https://edu.gov.ru//
+      - title: 'Министерство образования оренбургской области'
+        url: http://minobr.orb.ru//
+      - title: 'ГБУ РЦРО'
+        url: http://rcro56.ru//
 
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
+
+  # - title: Меню
+  #   children:
+  #     - title: "Configuration"
+  #       url: /docs/configuration/
+  #     - title: "Navigation"
+  #       url: /docs/navigation/
+  #     - title: "UI Text"
+  #       url: /docs/ui-text/
+  #     - title: "Authors"
+  #       url: /docs/authors/
+  #     - title: "Layouts"
+  #       url: /docs/layouts/
+

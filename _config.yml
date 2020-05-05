@@ -146,6 +146,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _collections
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -277,23 +278,28 @@ defaults:
       classes: wide
       author_profile: false
       sidebar:
-        nav: "docs"
+        - nav: "docs"
+        - nav: "friends"
+        - text: "[![your logo](https://selcdn.fedsp.com/centaurus/20/26956/2415e74cc7a98c45.jpeg)](https://selcdn.fedsp.com/centaurus/20/26956/2415e74cc7a98c45.jpeg)"
+        # - image: /assets/images/75-pobeda.jpg
+        #   image_alt: https://jekyllrb.com/resources/
+        #   text: "https://jekyllrb.com/resources/"
       header:
         overlay_image: https://avatars.mds.yandex.net/get-zen_doc/197791/pub_5a3fc2b648c85ef6715d56c4_5a3fc2f200b3ddf5dc91e09c/scale_1200
         # image_description: "Отдел образования администрации муниципального образования Новосергиевский район Оренбургской области"
-      gallery:
-        - url: /assets/images/75-pobeda.jpg
-          image_path: /assets/images/75-pobeda.jpg
-          alt: "placeholder image 1"
-          title: "Image 1 title caption"
-        - url: /assets/images/unsplash-gallery-image-2.jpg
-          image_path: /assets/images/Canada_3840x2400.jpg
-          alt: "placeholder image 2"
-          title: "Image 2 title caption"
-        - url: /assets/images/unsplash-gallery-image-3.jpg
-          image_path: /assets/images/5704.jpg
-          alt: "placeholder image 3"
-          title: "Image 3 title caption"
+      # gallery:
+      #   - url: /assets/images/75-pobeda.jpg
+      #     image_path: /assets/images/75-pobeda.jpg
+      #     alt: "placeholder image 1"
+      #     title: "Image 1 title caption"
+      #   - url: /assets/images/unsplash-gallery-image-2.jpg
+      #     image_path: /assets/images/Canada_3840x2400.jpg
+      #     alt: "placeholder image 2"
+      #     title: "Image 2 title caption"
+      #   - url: /assets/images/unsplash-gallery-image-3.jpg
+      #     image_path: /assets/images/5704.jpg
+      #     alt: "placeholder image 3"
+      #     title: "Image 3 title caption"
 
   # _posts
   - scope:
@@ -304,11 +310,22 @@ defaults:
       read_time: true
       comments: # true
       share: # true
-      related: true
+      related: # true
       classes: wide
       header:
-        teaser: /assets/images/Canada_3840x2400.jpg
+        overlay_image: false
+        image: false
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      header:
         overlay_image: false
         image: false
       
+
 
