@@ -3,7 +3,7 @@ main:
   - title: "Главная"
     url: https://novoserg-roo.github.io/
   - title: "О нас"
-    url: https://novoserg-roo.github.io/
+    url: https://novoserg-roo.github.io/about
   - title: "Публикации"
     url: /year-archive/
   - title: "Поиск"
