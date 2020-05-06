@@ -1,35 +1,34 @@
 # main links
 main:
   - title: "Главная"
-    url: https://novoserg-roo.github.io/
+    url: /
   - title: "О нас"
-    url: https://novoserg-roo.github.io/about
+    url: /о-нас/
   - title: "Публикации"
-    url: /year-archive/
+    url: /публикации/
   - title: "Поиск"
-    url: /collection-archive/
+    url: /поиск/
   - title: "Карта сайта"
     url: /sitemap/
 docs:
-  - title: Меню
+  - title: 'Меню'
     children:
       - title: 'Национальный проект "Образованиe"'
-        url: /docs/navigation/
+        url: /национальный-проект-образование/
       - title: "Государственные и муниципальные программы"
         url: /docs/ui-text/
       - title: "Отдел опеки и попечительства"
         url: /docs/authors/
       - title: "Дошкольное образование"
         url: /docs/layouts/
-friends: 
-  - title: Друзья сайта
+  - title: 'Друзья сайта'
     children:
-      - title: 'Министерство просвещения РФ'
-        url: https://edu.gov.ru//
-      - title: 'Министерство образования оренбургской области'
-        url: http://minobr.orb.ru//
-      - title: 'ГБУ РЦРО'
-        url: http://rcro56.ru//
+    - title: 'Министерство просвещения РФ'
+      url: https://edu.gov.ru//
+    - title: 'Министерство образования оренбургской области'
+      url: http://minobr.orb.ru//
+    - title: 'ГБУ РЦРО'
+      url: http://rcro56.ru//
 
 
   # - title: Меню

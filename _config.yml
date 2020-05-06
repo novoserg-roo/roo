@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Отдел образования новосергиевки"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : /
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # /assets/images/Canada_3840x2400.jpg
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -147,6 +147,8 @@ include:
   - .htaccess
   - _pages
   - _collections
+  - _files
+  - _docs
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -279,7 +281,6 @@ defaults:
       author_profile: false
       sidebar:
         - nav: "docs"
-        - nav: "friends"
         - text: "[![your logo](https://selcdn.fedsp.com/centaurus/20/26956/2415e74cc7a98c45.jpeg)](https://selcdn.fedsp.com/centaurus/20/26956/2415e74cc7a98c45.jpeg)"
         # - image: /assets/images/75-pobeda.jpg
         #   image_alt: https://jekyllrb.com/resources/
@@ -323,9 +324,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      header:
-        overlay_image: false
-        image: false
+      
       
 
 
