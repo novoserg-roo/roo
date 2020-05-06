@@ -8,8 +8,6 @@ main:
     url: /публикации/
   - title: "Поиск"
     url: /поиск/
-  - title: "Карта сайта"
-    url: /sitemap/
 docs:
   - title: 'Меню'
     children:
