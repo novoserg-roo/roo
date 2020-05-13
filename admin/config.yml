@@ -8,7 +8,7 @@ backend:
 media_folder: 'assets/uploads'
 collections:
   - name: 'blog'
-    label: 'Blog'
+    label: 'Публикации'
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -19,3 +19,23 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    folder: '_pages/'
+    editor:
+      preview: false
+    files:
+      - label: 'О нас'
+        name: 'about'
+        file: 'about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'О нас' }
+          - { label: 'Layout', name: 'title', widget: 'hidden', default: 'single' }
+          - { label: 'Permalink', name: '', } 
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      # - label: 'Проект Образование'
+      #   name: 'project-obrazovanie'
+      #   file: 'project-obrazovanie.md'
+      #   fields:
+      #     - { label: '' }
+      #     - { label: '' }
