@@ -22,17 +22,25 @@ collections:
   - name: 'pages'
     label: 'Pages'
     folder: '_pages/'
+    create: true
     editor:
       preview: false
-    files:
-      - label: 'О нас'
-        name: 'about'
-        file: 'about.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'О нас' }
-          - { label: 'Layout', name: 'title', widget: 'hidden', default: 'single' }
-          - { label: 'Permalink', name: '', } 
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+    fields: 
+      - { label: 'Заголовок', name: 'title', widget: 'string' }
+      - { label: 'Ссылка на страницу', name: 'permalink', widget: 'string' }
+      - { label: 'Toc', name: 'toc', widget: 'hidden', default: false }
+      - { label: 'Header', name: 'header', widget: 'hidden', default: false  }
+    # files:
+    #   - label: 'О нас'
+    #     name: 'about'
+    #     file: 'about.md'
+    #     fields:
+    #       - { label: 'Название', name: 'title', widget: 'hidden', default: 'О нас' }
+    #       - { label: 'Layout', name: 'title', widget: 'hidden', default: 'single' }
+    #       - { label: 'Ссылка на страницу', name: 'permalink', widget: 'string', default: '/о-нас/' } 
+    #       - { label: 'Содержание', name: 'body', widget: 'markdown' }
+    #     fields:
+    #       - { label: }
       # - label: 'Проект Образование'
       #   name: 'project-obrazovanie'
       #   file: 'project-obrazovanie.md'
