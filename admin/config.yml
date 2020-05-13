@@ -1,0 +1,15 @@
+# config.yml
+
+backend:
+  name: github
+  # repo: owner-name/repo-name # Path to your GitHub repository
+  repo: novoserg-roo/novoserg-roo.github.io
+  branch: master
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
+      
