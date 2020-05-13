@@ -1,7 +1,8 @@
 ---
-title: "Пример поста 1"
+title: Примерjjm
 header:
   teaser: /assets/images/5704.jpg
+date: 2020-05-13T09:32:07.589Z
 ---
 # Welcome
 
