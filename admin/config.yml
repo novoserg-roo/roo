@@ -28,8 +28,9 @@ collections:
     fields: 
       - { label: 'Заголовок', name: 'title', widget: 'string' }
       - { label: 'Ссылка на страницу', name: 'permalink', widget: 'string' }
-      - { label: 'Toc', name: 'toc', widget: 'hidden', default: false }
-      - { label: 'Header', name: 'header', widget: 'hidden', default: false  }
+      - { label: 'Toc', name: 'toc', widget: 'hidden', default: true }
+      - { label: 'Header', name: 'header', widget: 'hidden', default: false }
+      - { label: 'Содержание', name: 'body', widget: 'markdown' }
     # files:
     #   - label: 'О нас'
     #     name: 'about'
